@@ -73,8 +73,9 @@
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name +' your email is ');
       document.getElementById('status').innerHTML =
-       window.open("http://decodeapp-herokutan.herokuapp.com/");
+       
         'Thanks for logging in, ' + response.name + '!';''
+        window.open("http://decodeapp-herokutan.herokuapp.com/");
     });
   }
 </script>
