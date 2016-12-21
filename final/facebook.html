@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 </head>
 <body>
-<body background="final/asd.jpg">
 <script>
 //HANNAH MARI G. TAN
   // This is called with the results from from FB.getLoginStatus().
@@ -68,12 +67,12 @@
   }(document, 'script', 'facebook-jssdk'));
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
-  function testAPI() {
+
+function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name +' your email is ');
-      document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';''
+    window.open("http://decodeapp-herokutan.herokuapp.com/");
     });
   }
 </script>
